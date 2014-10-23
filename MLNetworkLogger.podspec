@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://bitbucket.org/mustlab_opensource/mlnetworklogger"
   s.license          = 'MIT'
   s.author           = { "MUSTLab Developer" => "hello@mustlab.ru" }
-  s.source           = { :git => "https://bitbucket.org/mustlab_opensource/mlnetworklogger.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://bitbucket.org/mustlab_opensource/mlnetworklogger.git", :tag => "0.1.0" }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
