@@ -42,7 +42,7 @@
         NSObject *responseObject = nil;
         
         if ([[note object] respondsToSelector:@selector(responseString)]) {
-            responseObject = [[note object] responseString];
+            responseObject = [[note object] performSelector:@selector(responseString)];
         } else if (note.userInfo) {
             responseObject = note.userInfo[@"com.alamofire.networking.task.complete.serializedresponse"];
         }

@@ -12,6 +12,8 @@
 #import "MLNetworkTrafficDescriptionProvider.h"
 #import "MLRequestFilter.h"
 #import "MLNetworkLoggingAdapter.h"
+#import "MLHostnameRequestFilter.h"
+#import "MLAFNetworkingAdapter.h"
 
 @interface MLNetworkLogger : NSObject<MLNetworkTrafficProcessor>
 

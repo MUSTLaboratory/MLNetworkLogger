@@ -1,24 +1,18 @@
 Pod::Spec.new do |s|
   s.name             = "MLNetworkLogger"
   s.version          = "0.1.0"
-  s.summary          = "A short description of MLNetworkLogger."
-  s.description      = ""
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/MLNetworkLogger"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.summary          = "Fast and extensible network activity logger of your choice."
+  s.description      = "Extensible network activity logger mainly based on usage of Apple's URL Loading system architecture and NSURLProtocol class. Has no external dependencies other than Foundation. Supports NSURLConnection/NSURLSession/ AFNetworking logging."
+  s.homepage         = "https://bitbucket.org/mustlab_opensource/mlnetworklogger"
   s.license          = 'MIT'
   s.author           = { "MUSTLab Developer" => "hello@mustlab.ru" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/MLNetworkLogger.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://bitbucket.org/mustlab_opensource/mlnetworklogger.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes'
-  s.resource_bundles = {
-    'MLNetworkLogger' => ['Pod/Assets/*.png']
-  }
+  s.source_files = 'Pod/Classes/**/*.m'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'Foundation'
 end
