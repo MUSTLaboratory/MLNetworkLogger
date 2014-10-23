@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "MLNetworkTrafficProcessor.h"
+#import <MLNetworkTrafficProcessor.h>
 
 @interface MLLoggingProtocol : NSURLProtocol
 
