@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "MLNetworkLoggingAdapter.h"
+#import <MLNetworkLoggingAdapter.h>
 
 @interface MLAFNetworkingAdapter : MLNetworkLoggingAdapter
 

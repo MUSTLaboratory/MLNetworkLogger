@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "MLRequestFilter.h"
+#import <MLRequestFilter.h>
 
 @interface MLHostnameRequestFilter : NSObject<MLRequestFilter>
 

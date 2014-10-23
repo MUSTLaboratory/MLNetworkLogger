@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import "MLNetworkTrafficProcessor.h"
-#import "MLNetworkTrafficDescriptionProvider.h"
+#import <MLNetworkTrafficProcessor.h>
+#import <MLNetworkTrafficDescriptionProvider.h>
 
 @interface MLNetworkLogFactory : NSObject
 

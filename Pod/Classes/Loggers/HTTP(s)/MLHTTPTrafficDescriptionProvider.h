@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "MLNetworkTrafficDescriptionProvider.h"
+#import <MLNetworkTrafficDescriptionProvider.h>
 
 @interface MLHTTPTrafficDescriptionProvider : NSObject<MLNetworkTrafficDescriptionProvider>
 
