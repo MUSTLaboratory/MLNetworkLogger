@@ -33,9 +33,9 @@ and you are ready to go! But you can do a lot more with customizations...
 ```
 
 ### Here is what different detallization level means for HTTP requests/responses:
-MLNetworkLoggerLogDetalizationLow - will log only URL, HTTP method and status code
-MLNetworkLoggerLogDetalizationMedium - will log only URL, HTTP method, status code and HTTP headers
-MLNetworkLoggerLogDetalizationHigh - will log all HTTP headers and the body
+* **MLNetworkLoggerLogDetalizationLow** - will log only URL, HTTP method and status code
+* **MLNetworkLoggerLogDetalizationMedium** - will log only URL, HTTP method, status code and HTTP headers
+* **MLNetworkLoggerLogDetalizationHigh** - will log all HTTP headers and the body
 
 ### Optionally you can set a requests filter:
 ```
@@ -63,8 +63,8 @@ To run the example project, clone the repo, and run `pod try MLNetworkLogger`
 
 ## Requirements
 
-iOS 7+
-Xcode 5+
+* iOS 7+
+* Xcode 5+
 
 ## Installation
 
