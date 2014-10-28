@@ -13,7 +13,9 @@ In your App Delegate just add these lines for basic setup (this will enable requ
 #!objective-c
 #import <MLNetworkLogger.h>
 ```
-In your 'application:didFinishLaunchingWithOptions:' just add:
+In your ```
+#!objective-c
+application:didFinishLaunchingWithOptions:``` just add:
 ```
 #!objective-c
 [[MLNetworkLogger sharedLogger] startLogging];
