@@ -13,14 +13,12 @@ In your App Delegate just add these lines for basic setup (this will enable requ
 #!objective-c
 #import <MLNetworkLogger.h>
 ```
-In your ```
-#!objective-c
-application:didFinishLaunchingWithOptions:``` just add:
+In your **application:didFinishLaunchingWithOptions:** just add:
 ```
 #!objective-c
 [[MLNetworkLogger sharedLogger] startLogging];
 ```
-and you are ready to go! But you can do a lot of customizations...
+and you are ready to go! But you can do a lot more with customizations...
 
 ### To log traffic also from AFNetworking just add this:
 ```
