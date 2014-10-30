@@ -10,26 +10,22 @@
 In your App Delegate just add these lines for basic setup (this will enable requests& responses logging from global NSURLSession and NSURLConnection):
 
 ```
-#!objective-c
 #import <MLNetworkLogger.h>
 ```
 In your `application:didFinishLaunchingWithOptions:` just add:
 ```
-#!objective-c
 [[MLNetworkLogger sharedLogger] startLogging];
 ```
 and you are ready to go! But you can do a lot more with customizations...
 
 ### To log traffic also from AFNetworking just add this:
 ```
-#!objective-c
-    [[MLNetworkLogger sharedLogger] addAdapter:[MLAFNetworkingAdapter new]];
+[[MLNetworkLogger sharedLogger] addAdapter:[MLAFNetworkingAdapter new]];
 ```
 
 ### To set log detalization:
 ```
-#!objective-c
-    [[MLNetworkLogger sharedLogger] setLogDetalization:MLNetworkLoggerLogDetalizationHigh];
+[[MLNetworkLogger sharedLogger] setLogDetalization:MLNetworkLoggerLogDetalizationHigh];
 ```
 
 ### Here is what different detallization level means for HTTP requests/responses:
@@ -39,14 +35,12 @@ and you are ready to go! But you can do a lot more with customizations...
 
 ### Optionally you can set a requests filter:
 ```
-#!objective-c
 [[MLNetworkLogger sharedLogger] setRequestFilter:[MLHostnameRequestFilter filterWithHostnames:@[@"apple.com"]]];
 ```
 **NOTE:** Currently we only have hostname filter preinstalled, which you can use to log network traffic only from specific hosts, or match them with RegEx pattern. And still you can write your own filter and do a pull request to make it available to everybody.
 
 ### You can change logging format for requests, currently we support regular and cURL formats:
 ```
-#!objective-c
     [[MLNetworkLogger sharedLogger] setRequestLogFormat:MLNetworkLoggerRequestLogFormatCURL];
 ```
 
@@ -54,7 +48,6 @@ and you are ready to go! But you can do a lot more with customizations...
 
 Currently we support only AFNetworking, so to log from it just add this:
 ```
-#!objective-c
 [[MLNetworkLogger sharedLogger] addAdapter:[MLAFNetworkingAdapter new]];
 ```
 **NOTE:** we know that AFNetworking uses native NSURLSession/NSURLConnection classes to operate with requests and responses, but the problem is that it creates it's own NSURLSession object which can be logged only by the AFNetworking framework itself and is not accessible from any external framework. So you need this option only if you use AFNetworking with AFURLSessionManager API.
